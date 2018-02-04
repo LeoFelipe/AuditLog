@@ -7,9 +7,9 @@ What is this Project?
 - API to be consumed by other applications that wish to perform Audit Log
 
 - Resources:
--- Requisit Log with Location
--- Response Log
--- Applications CRUD
+  - Request Log with Location
+  - Response Log
+  - Applications CRUD
 
 What technologies/architetures Backend this project implements?
 
