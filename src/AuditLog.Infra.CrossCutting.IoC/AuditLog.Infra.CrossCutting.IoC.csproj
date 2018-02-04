@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AuditLog.Application\AuditLog.Application.csproj" />
+    <ProjectReference Include="..\AuditLog.Domain.Core\AuditLog.Domain.Core.csproj" />
+    <ProjectReference Include="..\AuditLog.Domain\AuditLog.Domain.csproj" />
+    <ProjectReference Include="..\AuditLog.Infra.CrossCutting.Bus\AuditLog.Infra.CrossCutting.Bus.csproj" />
+    <ProjectReference Include="..\AuditLog.Infra.Data\AuditLog.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
